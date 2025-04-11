@@ -51,6 +51,7 @@
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Footer from "./components/footer";
+import Navbar from "./components/navbar";
 
 
 export const metadata = {
@@ -66,6 +67,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
       <div id="modal"></div>
+      {/* <Navbar/> */}
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {children}
         </ThemeProvider>

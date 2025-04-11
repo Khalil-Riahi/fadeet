@@ -110,6 +110,8 @@ export default function OpenSpaceRoom() {
 
   return (
     <>
+    <NavBar />
+    
       <main
         className="h-[50vh] bg-gradient-to-r text-gray-800 font-sans relative overflow-hidden mb-20"
         style={{
@@ -117,8 +119,8 @@ export default function OpenSpaceRoom() {
             "linear-gradient(to right, rgb(241, 249, 248) 0%, #aee6f9 30%, rgb(163, 244, 235) 50%, #62e3cd 100%)",
         }}
       >
-        <NavBar />
-        <Hero />
+        {/* <NavBar /> */}
+        <Hero roomType="Open Space"/>
       </main>
 
       <ImagesComponent images={images} />

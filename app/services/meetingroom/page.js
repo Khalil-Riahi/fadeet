@@ -1,5 +1,5 @@
 'use client'
-import Hero from './../../components/hero2'
+import Hero from './../../components/hero3'
 import NavBar from './../../components/navbar'
 import ImagesComponent from "../../components/imagesComponent";
 import Benifits from "../../components/benefits";
@@ -63,8 +63,19 @@ export default function MeetingRoom(){
 
     return(
         <>
-            <NavBar />
-            <Hero image={heroImg2}/>
+        <NavBar />
+                <main
+                className="h-[50vh] bg-gradient-to-r text-gray-800 font-sans relative overflow-hidden mb-20"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(to right, rgb(241, 249, 248) 0%, #aee6f9 30%, rgb(163, 244, 235) 50%, #62e3cd 100%)",
+                }}
+              >
+                {/* <NavBar /> */}
+                <Hero roomType="Meeting Room"/>
+              </main>
+            {/* <NavBar /> */}
+            {/* <Hero image={heroImg2}/> */}
             <ImagesComponent images={images}/>
             <RoomsType rooms={Rooms}/>
 
